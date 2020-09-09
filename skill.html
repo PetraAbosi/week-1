@@ -5,32 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill</title>
     <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: rgb(175, 124, 124);
+      *{
+        box-sizing:border-box
+      }
+      header{
+        background-color: white;
+        padding: 30px;
+        text-align:center;
+        color:black;
+      }
+      section{
+        display: flexbox;
+        display: flex;
+      }
+      nav{
+        -webkit-webkit: flex 1;
+        -ms-webkit: flex 1;
+        flex: 1;
+        background: rgb(175, 124, 124);
+        padding: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .img-container{
+        text-align: center;
+      }
+      article{
+       -webkit-webkit: flex 3;
+        -ms-webkit: flex 3;
+        flex: 3;
+        background: white;
+        padding: 10px;
+      }
+      footer{
+        background-color: rgb(175, 124, 124);
+        padding: 10px;
+        text-align:center;
+        color: white;
+      }
+      @media (max-width: 600px){
+        section{
+          -webkit-flex-direction: row;
+          flex-direction: row;
         }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 20px 30px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: rgb(22, 68, 121);
-        }
-        </style>
+      }
+    </style>
 </head>
 <body>
+  <section>
+    <nav>
     <ul>
         <li><a class="active" href="Home/index.html">Home</a></li>
         <li><a href="Skill/skill.html">Skill</a></li>
@@ -39,7 +64,11 @@
         <li><a href="Work Experience/work experience.html">Work Experience</a></li>
         <li><a href="Interests/interests.html">Interests</a></li>
       </ul>
+    </nav>
+    <header>
     <h1>Skills</h1>
+  </header>
+  <article>
     <p>
         For the past few years, I have gotten the opportunity to develop myself in so many ways. I believe you should appreciate knowledge everyday and learn new things to better yourself for the tomorrow ahead. A few are some of the skills I have obtained:
         <ol>
@@ -50,11 +79,9 @@
             <li>Administrative experience such as filing and filling, organising and attending meetings and answering business calls.</li>
         </ol> 
     </p>
+</article>
+</section>
 
-</p>
-<br>
-<br>
-<br>
 <footer>
     <p>Author: Petra Abosi Mensah</p>  <p><a href="p.abosi@gmail.com">petra@gmail.com</a></p> 
   </footer>

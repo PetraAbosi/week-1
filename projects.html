@@ -5,33 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <style>
-        ul {
+        *{
+          box-sizing:border-box
+        }
+        header{
+          background-color: white;
+          padding: 30px;
+          text-align:center;
+          color:black;
+        }
+        section{
+          display: flexbox;
+          display: flex;
+        }
+        nav{
+          -webkit-webkit: flex 1;
+          -ms-webkit: flex 1;
+          flex: 1;
+          background: rgb(175, 124, 124);
+          padding: 20px;
+        }
+        nav ul {
           list-style-type: none;
-          margin: 0;
           padding: 0;
-          overflow: hidden;
-          background-color: rgb(175, 124, 124);
         }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
+        .img-container{
           text-align: center;
-          padding: 20px 30px;
-          text-decoration: none;
         }
-        
-        li a:hover {
-          background-color: rgb(22, 68, 121);
+        article{
+         -webkit-webkit: flex 3;
+          -ms-webkit: flex 3;
+          flex: 3;
+          background: white;
+          padding: 10px;
         }
-       
-    </style>
+        footer{
+          background-color: rgb(175, 124, 124);
+          padding: 10px;
+          text-align:center;
+          color: white;
+        }
+        @media (max-width: 600px){
+          section{
+            -webkit-flex-direction: row;
+            flex-direction: row;
+          }
+        }
+      </style>
 </head>
 <body>
+    <section>
+        <nav>
     <ul>
         <li><a class="active" href="Home/index.html">Home</a></li>
         <li><a href="Skill/skill.html">Skill</a></li>
@@ -40,7 +64,13 @@
         <li><a href="Work Experience/work experience.html">Work Experience</a></li>
         <li><a href="Interests/interests.html">Interests</a></li>
       </ul>
+    </nav>
+
+    <header>
     <h1>Projects</h1>
+</header>
+
+<article>
     <p>
         I have worked on quite a number of projects which includes:
         A calculator for a shoe shop using App inventor.
@@ -55,9 +85,9 @@
         My last project was MOF File Tracking Database System
         It was a database file tracking system which was designed to track files in the Ministry of Finance so that workers would find it easy to retrieve files and store files effectively. 
     </p>
-    <br>
-    <br>
-    <br>
+</article>
+</section>
+   
     <footer>
         <p>Author: Petra Abosi Mensah</p>  <p><a href="p.abosi@gmail.com">petra@gmail.com</a></p> 
       </footer>
