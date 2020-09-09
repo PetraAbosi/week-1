@@ -5,27 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coursework</title>
     <style>
-        ul {
-          list-style-type:none;
-          margin: 10;
-          padding: 5;
-          overflow: hidden;
+        *{
+          box-sizing:border-box
+        }
+        header{
+          background-color: white;
+          padding: 30px;
+          text-align:center;
+          color:black;
+        }
+        section{
+          display: flexbox;
+          display: flex;
+        }
+        nav{
+          -webkit-webkit: flex 1;
+          -ms-webkit: flex 1;
+          flex: 1;
+          background: rgb(175, 124, 124);
+          padding: 20px;
+        }
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        article{
+         -webkit-webkit: flex 3;
+          -ms-webkit: flex 3;
+          flex: 3;
+          background: white;
+          padding: 10px;
+        }
+        footer{
           background-color: rgb(175, 124, 124);
-        }
-        
-        
-        li a {
+          padding: 10px;
+          text-align:center;
           color: white;
-          text-align: center;
-          padding: 20px 30px;
-          text-decoration: none;
         }
-        
-    
-    
-    </style>
+        @media (max-width: 600px){
+          section{
+            -webkit-flex-direction: row;
+            flex-direction: row;
+          }
+        }
+      </style>
 </head>
 <body>
+    <section>
+        <nav>
     <ul>
         <li><a class="active" href="Home/index.html">Home</a></li>
         <li><a href="Skill/skill.html">Skill</a></li>
@@ -34,7 +61,12 @@
         <li><a href="Work Experience/work experience.html">Work Experience</a></li>
         <li><a href="Interests/interests.html">Interests</a></li>
       </ul>
+    </nav>
+    </section>
+    <header>
     <h1>Coursework</h1> 
+</header>
+<article>
     <p>
         These are the following CS Coursework I have done so far from Freshman year to Juniour Year:
         <ol>
@@ -46,6 +78,7 @@
             <li><a href="https://www.ashesi.edu.gh/academics/programmes/computer-science/management-information-systems-courses.html#Web_tech"> Web Technology</a></li>
         </ol>
     </p>
+</article>
     <br>
     <br>
     <br>
